@@ -1,3 +1,16 @@
+/********************************************************************************
+ * WEB700 – Assignment 05
+ *
+ * I declare that this assignment is my own work in accordance with Seneca's
+ * Academic Integrity Policy:
+ *
+ * https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html
+ *
+ * Name: Yi Ching Daniel Ngan   Student ID: 117044248 Date: November 17, 2025
+ *
+ * Published URL: https://web700-a5-2.vercel.app/
+ ********************************************************************************/
+
 const LegoData = require("./modules/legoSets");
 const legoData = new LegoData();
 const path = require("path");
