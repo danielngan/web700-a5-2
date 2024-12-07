@@ -1,18 +1,19 @@
 /********************************************************************************
- * WEB700 – Assignment 05
+ * WEB700 – Assignment 06
  *
  * I declare that this assignment is my own work in accordance with Seneca's
  * Academic Integrity Policy:
  *
  * https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html
  *
- * Name: Yi Ching Daniel Ngan   Student ID: 117044248 Date: November 17, 2025
+ * Name: Yi Ching Daniel Ngan   Student ID: 117044248 Date: December 6, 2024
  *
  * Published URL: https://web700-a5-2.vercel.app/
  ********************************************************************************/
 
 const LegoData = require("./modules/legoSets");
 const legoData = new LegoData();
+console.log("Created LogoData")
 const path = require("path");
 
 const express = require("express");
@@ -95,7 +96,7 @@ app.use((req, res, next) => {
 
 
 legoData.initialize().then(() => {
-    app.listen(HTTP_PORT, () => console.log(`server listening on port: ${HTTP_PORT}`));
+    app.listen(HTTP_PORT, "localhost", () => console.log(`server listening on port: ${HTTP_PORT}`));
 }).catch(err => {
     console.log(err);
 });
